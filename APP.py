@@ -11,7 +11,7 @@ except:
     print("Model Not loaded")
     
     
-st.title("College student placement prediction")
+st.title("🏫College student placement prediction")
 st.write("Fill the following:")
 Marks=st.number_input("Semesiter marks",value=0.0)
 Intern=st.selectbox("Internship",['Yes','No'])
@@ -26,4 +26,5 @@ if st.button('Predict'):
     input_=np.array([[Marks,intern_status,Project]])
     Pred=model.predict(input_)
 
-    st.success(f'Student should be {Pred[0]}')
+    st.success(f'👨‍🎓 Student should be {Pred[0]}')
+
