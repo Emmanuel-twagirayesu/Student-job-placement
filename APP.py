@@ -25,4 +25,5 @@ else:
 if st.button('Predict'):
     input_=np.array([[Marks,intern_status,Project]])
     Pred=model.predict(input_)
+
     st.success(f'Student should be {Pred[0]}')
