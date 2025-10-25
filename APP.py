@@ -28,3 +28,4 @@ if st.button('Predict'):
 
     st.success(f'👨‍🎓 Student should be {Pred[0]}')
 
+
