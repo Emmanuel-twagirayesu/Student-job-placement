@@ -12,7 +12,7 @@ try:
     IQ=st.number_input("IQ")
     intern=st.selectbox("Internship attended",["Yes","No"])
     Com=st.number_input("Communication Skills")
-    Proj=st.number_input("Project conucted")
+    Proj=st.number_input("Project conducted")
     Sem=st.number_input("Previous semester marks (%)")
     
     value=0
@@ -26,4 +26,5 @@ try:
         Pred=Model.predict(Input)
         st.success(f"The student should be {Pred[0]}")
 except:
+
     print("Model Not loaded well")
